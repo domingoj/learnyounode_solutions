@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var buffer = fs.readFile(process.argv[2], function(err, buffer){
+fs.readFile(process.argv[2], function(err, buffer){
 	
 	if(err){
 		return console.log(err);
